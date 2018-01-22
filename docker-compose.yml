@@ -1,0 +1,12 @@
+version: "3"
+services:
+  mysql:
+    image: mysql/mysql-server:8.0
+    container_name: mysql.treeipe.com
+    hostname: mysql.treeipe.com
+    volumes:
+      - ./containers/mysql/data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    env_file:
+      - .env

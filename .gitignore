@@ -1,0 +1,4 @@
+!containers/mysql/data/.gitkeep
+containers/mysql/data/
+.idea/
+.env
